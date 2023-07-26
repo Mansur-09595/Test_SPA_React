@@ -1,0 +1,120 @@
+table {
+  font-family: "Roboto", sans-serif;
+  width: 91%;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 14px;
+  border-collapse: collapse;
+}
+
+thead {
+  font-size: 14px;
+  line-height: 19.28px;
+  font-weight: 600;
+}
+
+.navigation {
+  margin-bottom: 19px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.search {
+  margin: 23px 0 0 56px;
+  max-width: 631px;
+  width: 91%;
+  position: relative;
+}
+
+.img-search {
+  position: absolute;
+  left: 555px;
+  top: 18px;
+  width: 21px;
+  height: 21px;
+}
+
+.input-search::placeholder {
+  padding-left: 26px;
+  color: #b2b7bf;
+}
+
+/* Styles for the search input */
+.input-search {
+  background-color: #5a5c66;
+  width: 100%; /* Use 100% width to make it responsive */
+  height: 52px;
+  color: #ffffff; /* Set the text color */
+  border: none; /* Remove the default border */
+}
+
+.buttons {
+  width: 71px;
+  height: 33px;
+  font-size: 24px;
+  line-height: 33.04px;
+  color: #474955;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.pages {
+  width: 104px;
+  height: 25px;
+}
+
+.pageNumber {
+  padding: 6px;
+  font-size: 19px;
+  line-height: 24.79px;
+  font-weight: 700;
+  font-style: italic;
+  cursor: pointer;
+  color: #474955;
+  text-decoration: none;
+}
+
+.pageNumber.active {
+  color: #7ebc3c;
+  border-radius: 50%;
+}
+
+.titles {
+  height: 54px;
+  background-color: #474955;
+  color: #ffffff;
+  box-shadow: 0px 4px 27px 0px #e6e7eac7;
+}
+
+th.sorted,
+img {
+  margin-left: 30px;
+}
+
+/* Стиль для иконки стрелки */
+th.sorted-asc img {
+  transform: rotate(
+    180deg
+  ); /* Переворачиваем иконку для сортировки по возрастанию */
+  transition: transform 0.2s ease-in-out; /* Плавная анимация при изменении transform */
+}
+
+/* Стиль для иконки стрелки вверх */
+th.sorted-desc img {
+  transform: rotate(0deg); /* Иконка не перевернута по умолчанию */
+  transition: transform 0.2s ease-in-out; /* Плавная анимация при изменении transform */
+}
+
+@media screen and (max-width: 390px) {
+  .MuiContainer-root {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search {
+    margin: 23px 0 0 0;
+    width: 100%; /* Контейнер занимает всю ширину на маленьких экранах */
+  }
+}

@@ -1,0 +1,20 @@
+.post-cell {
+  font-size: 13px;
+  line-height: 17.9px;
+  font-weight: 700;
+  border: 1px solid #e3e6ec; /* Add a 1px solid border */
+}
+
+.post-cell.id {
+  padding: 11px 48px;
+}
+
+.post-cell.title {
+  width: 529px;
+  padding: 11px 48px;
+}
+
+.post-cell.body {
+  width: 432px;
+  padding: 11px 48px;
+}
